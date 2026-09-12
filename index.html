@@ -1,1907 +1,2273 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Lee Electrical & Plumbing Services | Gauteng</title>
-
-<meta name="description" content="Lee Electrical & Plumbing Services. Electrical repairs, installations, plumbing, geysers, leaks, blocked drains, lighting and property maintenance. Request a quotation on WhatsApp.">
-
-<meta name="theme-color" content="#0A66C2">
-
-<style>
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
-html{
-  scroll-behavior:smooth;
-}
-
-body{
-  font-family:Arial,Helvetica,sans-serif;
-  background:#f5f8fc;
-  color:#17202a;
-  line-height:1.6;
-}
-
-a{
-  text-decoration:none;
-  color:inherit;
-}
-
-header{
-  position:sticky;
-  top:0;
-  z-index:1000;
-  background:#fff;
-  box-shadow:0 2px 15px rgba(0,0,0,.08);
-}
-
-.nav{
-  max-width:1150px;
-  margin:auto;
-  min-height:72px;
-  padding:12px 20px;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-}
-
-.logo{
-  font-size:21px;
-  font-weight:900;
-  color:#0A66C2;
-}
-
-.logo span{
-  color:#17202a;
-}
-
-nav{
-  display:flex;
-  gap:20px;
-  align-items:center;
-}
-
-nav a{
-  font-size:14px;
-  font-weight:800;
-}
-
-nav a:hover{
-  color:#0A66C2;
-}
-
-.menu-btn{
-  display:none;
-  border:0;
-  background:#0A66C2;
-  color:#fff;
-  padding:9px 13px;
-  border-radius:8px;
-  font-size:22px;
-}
-
-/* HERO */
-
-.hero{
-  min-height:620px;
-  display:flex;
-  align-items:center;
-  padding:70px 20px;
-  color:#fff;
-  background:
-    linear-gradient(rgba(4,35,65,.88),rgba(4,35,65,.88)),
-    linear-gradient(135deg,#0A66C2,#032f5f);
-}
-
-.hero-inner{
-  max-width:1150px;
-  width:100%;
-  margin:auto;
-}
-
-.badge{
-  display:inline-block;
-  padding:8px 15px;
-  border-radius:30px;
-  background:rgba(255,255,255,.12);
-  border:1px solid rgba(255,255,255,.22);
-  font-size:14px;
-  font-weight:800;
-  margin-bottom:20px;
-}
-
-.hero h1{
-  max-width:850px;
-  font-size:clamp(42px,7vw,76px);
-  line-height:1.02;
-  margin-bottom:22px;
-}
-
-.hero h1 span{
-  color:#69b7ff;
-}
-
-.hero p{
-  max-width:700px;
-  color:#dbeeff;
-  font-size:19px;
-  margin-bottom:30px;
-}
-
-.buttons{
-  display:flex;
-  flex-wrap:wrap;
-  gap:12px;
-}
-
-.btn{
-  display:inline-block;
-  border:0;
-  padding:14px 22px;
-  border-radius:9px;
-  font-weight:800;
-  cursor:pointer;
-  transition:.2s;
-}
-
-.btn:hover{
-  transform:translateY(-2px);
-}
-
-.btn-blue{
-  background:#0A66C2;
-  color:#fff;
-}
-
-.btn-white{
-  background:#fff;
-  color:#0A66C2;
-}
-
-.btn-light{
-  background:#e5f2ff;
-  color:#07579f;
-}
-
-/* GENERAL */
-
-section{
-  padding:75px 20px;
-}
-
-.container{
-  max-width:1150px;
-  margin:auto;
-}
-
-.heading{
-  max-width:720px;
-  margin:0 auto 45px;
-  text-align:center;
-}
-
-.heading small{
-  color:#0A66C2;
-  font-weight:900;
-  text-transform:uppercase;
-  letter-spacing:1px;
-}
-
-.heading h2{
-  font-size:clamp(30px,5vw,45px);
-  margin:8px 0 12px;
-}
-
-.heading p{
-  color:#687580;
-}
-
-/* SERVICES */
-
-.services{
-  background:#fff;
-}
-
-.service-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.card{
-  background:#f7faff;
-  border:1px solid #dbe8f4;
-  border-radius:16px;
-  padding:27px;
-  transition:.2s;
-}
-
-.card:hover{
-  transform:translateY(-5px);
-  box-shadow:0 12px 30px rgba(0,0,0,.08);
-}
-
-.icon{
-  width:58px;
-  height:58px;
-  display:grid;
-  place-items:center;
-  border-radius:14px;
-  background:#e5f2ff;
-  font-size:29px;
-  margin-bottom:16px;
-}
-
-.card h3{
-  color:#075aa8;
-  margin-bottom:8px;
-}
-
-.card p{
-  color:#687580;
-  font-size:14px;
-  margin-bottom:15px;
-}
-
-.quote{
-  color:#0A66C2;
-  font-weight:900;
-}
-
-/* WHY */
-
-.why{
-  background:#edf5fc;
-}
-
-.why-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:18px;
-}
-
-.why-card{
-  background:#fff;
-  padding:25px;
-  border-radius:15px;
-  text-align:center;
-}
-
-.why-icon{
-  font-size:34px;
-  margin-bottom:8px;
-}
-
-.why-card h3{
-  color:#075aa8;
-  margin-bottom:6px;
-}
-
-.why-card p{
-  color:#687580;
-  font-size:14px;
-}
-
-/* PROPERTY */
-
-.properties{
-  background:#fff;
-}
-
-.property-grid{
-  display:grid;
-  grid-template-columns:repeat(4,1fr);
-  gap:15px;
-}
-
-.property{
-  padding:24px 15px;
-  text-align:center;
-  background:#f7faff;
-  border:1px solid #dbe8f4;
-  border-radius:14px;
-  font-weight:800;
-}
-
-.property div{
-  font-size:34px;
-  margin-bottom:7px;
-}
-
-/* PRICES */
-
-.prices{
-  background:#f5f8fc;
-}
-
-.price-list{
-  max-width:850px;
-  margin:auto;
-  display:grid;
-  gap:10px;
-}
-
-.price-row{
-  display:flex;
-  justify-content:space-between;
-  gap:15px;
-  background:#fff;
-  padding:17px 20px;
-  border:1px solid #dbe8f4;
-  border-radius:10px;
-}
-
-.price-row span:last-child{
-  color:#0A66C2;
-  font-weight:900;
-  white-space:nowrap;
-}
-
-/* ABOUT */
-
-.about{
-  background:#fff;
-}
-
-.about-grid{
-  display:grid;
-  grid-template-columns:1.1fr .9fr;
-  gap:40px;
-  align-items:center;
-}
-
-.about h2{
-  font-size:42px;
-  line-height:1.15;
-  margin:8px 0 18px;
-}
-
-.about p{
-  color:#687580;
-  margin-bottom:15px;
-}
-
-.about-box{
-  background:#063d73;
-  color:#fff;
-  padding:35px;
-  border-radius:20px;
-}
-
-.about-box h3{
-  font-size:27px;
-  margin-bottom:15px;
-}
-
-.about-box ul{
-  list-style:none;
-}
-
-.about-box li{
-  padding:10px 0;
-  border-bottom:1px solid rgba(255,255,255,.16);
-}
-
-/* SAFETY */
-
-.safety{
-  background:#edf5fc;
-}
-
-.safety-box{
-  max-width:850px;
-  margin:auto;
-  background:#fff;
-  padding:30px;
-  border-radius:18px;
-  border:1px solid #dbe8f4;
-}
-
-.safety-box h3{
-  color:#075aa8;
-  margin-bottom:10px;
-}
-
-.safety-box p{
-  color:#687580;
-}
-
-.safety-box ul{
-  padding-left:20px;
-  margin-top:12px;
-  color:#687580;
-}
-
-/* BOOKING */
-
-.booking{
-  background:#fff;
-}
-
-.booking-box{
-  max-width:900px;
-  margin:auto;
-  background:#f5f8fc;
-  border:1px solid #dbe8f4;
-  padding:30px;
-  border-radius:20px;
-}
-
-.form-grid{
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:15px;
-}
-
-.field{
-  display:flex;
-  flex-direction:column;
-  gap:6px;
-}
-
-.full{
-  grid-column:1/-1;
-}
-
-label{
-  font-size:13px;
-  font-weight:800;
-}
-
-input,
-select,
-textarea{
-  width:100%;
-  padding:13px;
-  border:1px solid #cbd9e6;
-  border-radius:8px;
-  background:#fff;
-  font:inherit;
-  outline:none;
-}
-
-input:focus,
-select:focus,
-textarea:focus{
-  border-color:#0A66C2;
-}
-
-textarea{
-  min-height:120px;
-  resize:vertical;
-}
-
-.submit{
-  width:100%;
-  margin-top:18px;
-  background:#0A66C2;
-  color:#fff;
-  font-size:16px;
-}
-
-/* PAYMENT */
-
-.payment{
-  background:#dfefff;
-  text-align:center;
-}
-
-.payment-box{
-  max-width:750px;
-  margin:auto;
-}
-
-.payment h2{
-  font-size:35px;
-  margin-bottom:12px;
-}
-
-.payment p{
-  color:#61707d;
-  margin-bottom:22px;
-}
-
-/* CONTACT */
-
-.contact{
-  background:#062b4e;
-  color:#fff;
-}
-
-.contact .heading h2{
-  color:#fff;
-}
-
-.contact .heading p{
-  color:#c8dced;
-}
-
-.contact-grid{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.contact-card{
-  padding:25px;
-  background:rgba(255,255,255,.06);
-  border:1px solid rgba(255,255,255,.14);
-  border-radius:15px;
-}
-
-.contact-card strong{
-  display:block;
-  color:#69b7ff;
-  margin-bottom:8px;
-}
-
-.contact-card a{
-  word-break:break-word;
-}
-
-/* FOOTER */
-
-footer{
-  background:#031b30;
-  color:#aebdca;
-  text-align:center;
-  padding:25px 20px;
-  font-size:13px;
-}
-
-footer strong{
-  color:#fff;
-}
-
-/* WHATSAPP */
-
-.whatsapp{
-  position:fixed;
-  right:18px;
-  bottom:18px;
-  width:58px;
-  height:58px;
-  border-radius:50%;
-  display:grid;
-  place-items:center;
-  background:#25D366;
-  color:#fff;
-  font-size:27px;
-  box-shadow:0 8px 25px rgba(0,0,0,.25);
-  z-index:2000;
-}
-
-/* MOBILE */
-
-@media(max-width:850px){
-
-  nav{
-    display:none;
-    position:absolute;
-    top:72px;
-    left:0;
-    width:100%;
-    background:#fff;
-    padding:16px 20px;
-    flex-direction:column;
-    align-items:flex-start;
-    box-shadow:0 10px 20px rgba(0,0,0,.08);
-  }
-
-  nav.show{
-    display:flex;
-  }
-
-  .menu-btn{
-    display:block;
-  }
-
-  .service-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .why-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .property-grid{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .about-grid{
-    grid-template-columns:1fr;
-  }
-
-  .contact-grid{
-    grid-template-columns:1fr;
-  }
-}
-
-@media(max-width:560px){
-
-  section{
-    padding:55px 15px;
-  }
-
-  .hero{
-    min-height:570px;
-  }
-
-  .hero h1{
-    font-size:46px;
-  }
-
-  .hero p{
-    font-size:16px;
-  }
-
-  .service-grid,
-  .why-grid,
-  .property-grid,
-  .form-grid{
-    grid-template-columns:1fr;
-  }
-
-  .full{
-    grid-column:auto;
-  }
-
-  .booking-box{
-    padding:20px;
-  }
-
-  .about h2{
-    font-size:34px;
-  }
-
-  .price-row{
-    font-size:14px;
-  }
-}
-</style>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Lee Electrical & Plumbing Services | Gauteng</title>
+
+  <meta
+    name="description"
+    content="Lee Electrical & Plumbing Services provides electrical repairs, installations, plumbing, geysers, leaks, blocked drains, lighting and property maintenance across Gauteng."
+  >
+
+  <meta
+    name="keywords"
+    content="electrician Gauteng, plumber Gauteng, electrical repairs, plumbing repairs, geyser repair, blocked drains, lighting installation, Lee Electrical Plumbing"
+  >
+
+  <meta name="theme-color" content="#0A66C2">
+
+  <!-- Font Awesome -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+  >
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f5f8fc;
+      color: #172033;
+      line-height: 1.6;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    img {
+      max-width: 100%;
+      display: block;
+    }
+
+    /* ================= HEADER ================= */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: #ffffff;
+      border-bottom: 1px solid #e5eaf1;
+      box-shadow: 0 3px 15px rgba(0,0,0,0.06);
+    }
+
+    .nav {
+      max-width: 1200px;
+      margin: auto;
+      padding: 14px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: 800;
+      color: #0A66C2;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      white-space: nowrap;
+    }
+
+    .logo-icon {
+      width: 42px;
+      height: 42px;
+      border-radius: 12px;
+      background: #0A66C2;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 20px;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+    }
+
+    .nav-links a {
+      font-weight: 600;
+      font-size: 14px;
+      color: #26364d;
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #0A66C2;
+    }
+
+    .nav-whatsapp {
+      background: #20c56a;
+      color: white !important;
+      padding: 10px 15px;
+      border-radius: 9px;
+    }
+
+    .menu-btn {
+      display: none;
+      border: none;
+      background: #0A66C2;
+      color: white;
+      width: 42px;
+      height: 42px;
+      border-radius: 9px;
+      font-size: 20px;
+      cursor: pointer;
+    }
+
+    /* ================= HERO ================= */
+
+    .hero {
+      background:
+        linear-gradient(
+          135deg,
+          #061b35 0%,
+          #0A66C2 55%,
+          #1389ed 100%
+        );
+      color: white;
+      padding: 85px 20px;
+      overflow: hidden;
+    }
+
+    .hero-container {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.2fr 0.8fr;
+      gap: 50px;
+      align-items: center;
+    }
+
+    .hero h1 {
+      font-size: clamp(38px, 6vw, 68px);
+      line-height: 1.05;
+      margin-bottom: 20px;
+      font-weight: 900;
+    }
+
+    .hero h1 span {
+      color: #8ed0ff;
+    }
+
+    .hero p {
+      font-size: 18px;
+      max-width: 680px;
+      color: #eaf5ff;
+      margin-bottom: 30px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 9px;
+      padding: 14px 20px;
+      border-radius: 10px;
+      font-weight: 800;
+      border: none;
+      cursor: pointer;
+      transition: 0.25s;
+    }
+
+    .btn:hover {
+      transform: translateY(-2px);
+    }
+
+    .btn-white {
+      background: white;
+      color: #0A66C2;
+    }
+
+    .btn-whatsapp {
+      background: #20c56a;
+      color: white;
+    }
+
+    .btn-blue {
+      background: #0A66C2;
+      color: white;
+    }
+
+    .btn-outline {
+      background: transparent;
+      border: 2px solid white;
+      color: white;
+    }
+
+    .hero-card {
+      background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.22);
+      backdrop-filter: blur(10px);
+      padding: 28px;
+      border-radius: 22px;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.15);
+    }
+
+    .hero-card h3 {
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .hero-item {
+      display: flex;
+      align-items: center;
+      gap: 13px;
+      margin: 15px 0;
+    }
+
+    .hero-item i {
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      background: rgba(255,255,255,0.16);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ================= GENERAL ================= */
+
+    section {
+      padding: 75px 20px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .section-title {
+      text-align: center;
+      margin-bottom: 45px;
+    }
+
+    .section-title span {
+      display: inline-block;
+      color: #0A66C2;
+      font-size: 14px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 1.5px;
+      margin-bottom: 7px;
+    }
+
+    .section-title h2 {
+      font-size: clamp(30px, 5vw, 45px);
+      line-height: 1.15;
+      margin-bottom: 12px;
+    }
+
+    .section-title p {
+      max-width: 700px;
+      margin: auto;
+      color: #667085;
+    }
+
+    /* ================= SERVICES ================= */
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      background: white;
+      padding: 28px;
+      border-radius: 17px;
+      border: 1px solid #e4e9f0;
+      box-shadow: 0 8px 30px rgba(25,55,90,0.06);
+      transition: 0.25s;
+    }
+
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 35px rgba(25,55,90,0.12);
+    }
+
+    .service-icon {
+      width: 55px;
+      height: 55px;
+      border-radius: 14px;
+      background: #eaf4ff;
+      color: #0A66C2;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      margin-bottom: 18px;
+    }
+
+    .service-card h3 {
+      margin-bottom: 9px;
+      font-size: 21px;
+    }
+
+    .service-card p {
+      color: #667085;
+      font-size: 15px;
+    }
+
+    /* ================= FEATURE STRIP ================= */
+
+    .feature-strip {
+      background: #0b1f36;
+      color: white;
+      padding: 35px 20px;
+    }
+
+    .features {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    .feature {
+      display: flex;
+      gap: 13px;
+      align-items: center;
+    }
+
+    .feature i {
+      color: #65b8ff;
+      font-size: 25px;
+    }
+
+    .feature strong {
+      display: block;
+    }
+
+    .feature small {
+      color: #b9c9da;
+    }
+
+    /* ================= PROPERTY TYPES ================= */
+
+    .property-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 18px;
+    }
+
+    .property-card {
+      background: white;
+      padding: 25px;
+      text-align: center;
+      border-radius: 15px;
+      border: 1px solid #e3e8ef;
+    }
+
+    .property-card i {
+      color: #0A66C2;
+      font-size: 30px;
+      margin-bottom: 10px;
+    }
+
+    .property-card h3 {
+      font-size: 18px;
+    }
+
+    /* ================= PRICE GUIDE ================= */
+
+    .price-section {
+      background: #eef6ff;
+    }
+
+    .price-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .price-card {
+      background: white;
+      padding: 25px;
+      border-radius: 17px;
+      border: 1px solid #dce8f5;
+    }
+
+    .price-card h3 {
+      color: #0A66C2;
+      margin-bottom: 12px;
+    }
+
+    .price-row {
+      display: flex;
+      justify-content: space-between;
+      gap: 15px;
+      padding: 10px 0;
+      border-bottom: 1px solid #edf0f4;
+      font-size: 14px;
+    }
+
+    .price-row:last-child {
+      border-bottom: none;
+    }
+
+    .price {
+      font-weight: 800;
+      color: #0A66C2;
+      white-space: nowrap;
+    }
+
+    .price-note {
+      text-align: center;
+      color: #667085;
+      margin-top: 25px;
+      font-size: 14px;
+    }
+
+    /* ================= ABOUT ================= */
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 45px;
+      align-items: center;
+    }
+
+    .about-box {
+      background: #0A66C2;
+      color: white;
+      padding: 38px;
+      border-radius: 22px;
+      min-height: 330px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    .about-box i {
+      font-size: 45px;
+      margin-bottom: 20px;
+      color: #a9ddff;
+    }
+
+    .about-content h2 {
+      font-size: 38px;
+      margin-bottom: 18px;
+    }
+
+    .about-content p {
+      color: #667085;
+      margin-bottom: 15px;
+    }
+
+    .check-list {
+      list-style: none;
+      margin-top: 20px;
+    }
+
+    .check-list li {
+      margin: 12px 0;
+      display: flex;
+      gap: 10px;
+      align-items: flex-start;
+    }
+
+    .check-list i {
+      color: #0A66C2;
+      margin-top: 4px;
+    }
+
+    /* ================= SAFETY ================= */
+
+    .safety {
+      background: #fff;
+    }
+
+    .safety-box {
+      background: #fff8e8;
+      border: 1px solid #f4dfaa;
+      padding: 28px;
+      border-radius: 16px;
+      display: flex;
+      gap: 18px;
+      align-items: flex-start;
+    }
+
+    .safety-box i {
+      color: #d58b00;
+      font-size: 30px;
+    }
+
+    .safety-box h3 {
+      margin-bottom: 6px;
+    }
+
+    /* ================= BOOKING ================= */
+
+    .booking-section {
+      background: #f0f6fc;
+    }
+
+    .booking-grid {
+      display: grid;
+      grid-template-columns: 0.8fr 1.2fr;
+      gap: 30px;
+      align-items: start;
+    }
+
+    .booking-info {
+      background: #0b1f36;
+      color: white;
+      padding: 35px;
+      border-radius: 20px;
+    }
+
+    .booking-info h2 {
+      font-size: 32px;
+      margin-bottom: 15px;
+    }
+
+    .booking-info p {
+      color: #c5d1df;
+    }
+
+    .booking-contact {
+      margin-top: 25px;
+    }
+
+    .booking-contact div {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 15px 0;
+    }
+
+    .booking-contact i {
+      color: #6dc2ff;
+      width: 20px;
+    }
+
+    .booking-form {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 35px rgba(20,50,80,0.08);
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .form-group {
+      margin-bottom: 16px;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
+
+    label {
+      display: block;
+      font-weight: 700;
+      font-size: 14px;
+      margin-bottom: 7px;
+    }
+
+    input,
+    select,
+    textarea {
+      width: 100%;
+      padding: 13px 14px;
+      border: 1px solid #d5dce5;
+      border-radius: 9px;
+      font: inherit;
+      outline: none;
+      background: white;
+    }
+
+    input:focus,
+    select:focus,
+    textarea:focus {
+      border-color: #0A66C2;
+      box-shadow: 0 0 0 3px rgba(10,102,194,0.08);
+    }
+
+    textarea {
+      min-height: 110px;
+      resize: vertical;
+    }
+
+    .submit-btn {
+      width: 100%;
+      background: #20c56a;
+      color: white;
+      padding: 15px;
+      border: none;
+      border-radius: 10px;
+      font-weight: 800;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .submit-btn:hover {
+      background: #16a957;
+    }
+
+    /* ================= PAYMENT ================= */
+
+    .payment-section {
+      background: white;
+    }
+
+    .payment-box {
+      max-width: 800px;
+      margin: auto;
+      background: #eef7ff;
+      border: 1px solid #d7eaff;
+      padding: 35px;
+      border-radius: 20px;
+      text-align: center;
+    }
+
+    .payment-box i {
+      font-size: 45px;
+      color: #0A66C2;
+      margin-bottom: 15px;
+    }
+
+    .payment-box h2 {
+      margin-bottom: 10px;
+    }
+
+    .payment-box p {
+      color: #667085;
+      margin-bottom: 20px;
+    }
+
+    /* ================= CONTACT ================= */
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+    }
+
+    .contact-card {
+      background: white;
+      border: 1px solid #e1e7ef;
+      padding: 28px;
+      border-radius: 17px;
+      text-align: center;
+    }
+
+    .contact-card i {
+      width: 55px;
+      height: 55px;
+      background: #eaf4ff;
+      color: #0A66C2;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 15px;
+      font-size: 23px;
+    }
+
+    .contact-card h3 {
+      margin-bottom: 7px;
+    }
+
+    .contact-card p {
+      color: #667085;
+      font-size: 14px;
+    }
+
+    .contact-card a {
+      color: #0A66C2;
+      font-weight: 700;
+    }
+
+    /* ================= CTA ================= */
+
+    .cta {
+      background: linear-gradient(135deg, #0A66C2, #064783);
+      color: white;
+      text-align: center;
+      padding: 65px 20px;
+    }
+
+    .cta h2 {
+      font-size: clamp(30px, 5vw, 45px);
+      margin-bottom: 12px;
+    }
+
+    .cta p {
+      color: #e4f2ff;
+      max-width: 700px;
+      margin: 0 auto 25px;
+    }
+
+    /* ================= FOOTER ================= */
+
+    footer {
+      background: #071321;
+      color: #cbd6e2;
+      padding: 45px 20px 25px;
+    }
+
+    .footer-grid {
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 1.4fr 1fr 1fr;
+      gap: 35px;
+    }
+
+    footer h3 {
+      color: white;
+      margin-bottom: 12px;
+    }
+
+    footer p {
+      color: #9fb0c2;
+      font-size: 14px;
+    }
+
+    .footer-links {
+      list-style: none;
+    }
+
+    .footer-links li {
+      margin: 9px 0;
+    }
+
+    .footer-links a:hover {
+      color: white;
+    }
+
+    .footer-bottom {
+      max-width: 1200px;
+      margin: 35px auto 0;
+      padding-top: 20px;
+      border-top: 1px solid #1c2b3c;
+      text-align: center;
+      font-size: 13px;
+      color: #8293a7;
+    }
+
+    /* ================= FLOATING WHATSAPP ================= */
+
+    .floating-whatsapp {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 999;
+      width: 58px;
+      height: 58px;
+      background: #20c56a;
+      color: white;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 28px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.22);
+      transition: 0.2s;
+    }
+
+    .floating-whatsapp:hover {
+      transform: scale(1.08);
+    }
+
+    /* ================= MOBILE ================= */
+
+    @media (max-width: 900px) {
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 70px;
+        left: 15px;
+        right: 15px;
+        background: white;
+        padding: 20px;
+        border-radius: 14px;
+        box-shadow: 0 15px 35px rgba(0,0,0,0.12);
+        flex-direction: column;
+        align-items: stretch;
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 10px;
+      }
+
+      .nav-whatsapp {
+        text-align: center;
+      }
+
+      .menu-btn {
+        display: block;
+      }
+
+      .hero-container {
+        grid-template-columns: 1fr;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .features {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .property-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .price-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .about-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .booking-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .contact-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 600px) {
+
+      section {
+        padding: 55px 15px;
+      }
+
+      .nav {
+        padding: 12px 15px;
+      }
+
+      .logo {
+        font-size: 17px;
+      }
+
+      .logo-icon {
+        width: 38px;
+        height: 38px;
+      }
+
+      .hero {
+        padding: 60px 15px;
+      }
+
+      .hero h1 {
+        font-size: 43px;
+      }
+
+      .hero p {
+        font-size: 16px;
+      }
+
+      .hero-buttons {
+        flex-direction: column;
+      }
+
+      .hero-buttons .btn {
+        width: 100%;
+      }
+
+      .services-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .features {
+        grid-template-columns: 1fr;
+      }
+
+      .property-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full {
+        grid-column: auto;
+      }
+
+      .booking-form {
+        padding: 20px;
+      }
+
+      .booking-info {
+        padding: 25px;
+      }
+
+      .about-content h2 {
+        font-size: 30px;
+      }
+
+      .payment-box {
+        padding: 25px 18px;
+      }
+
+      .floating-whatsapp {
+        width: 54px;
+        height: 54px;
+        right: 15px;
+        bottom: 15px;
+      }
+    }
+  </style>
 </head>
 
 <body>
 
-<script>
-const BUSINESS_NAME = "Lee Electrical & Plumbing Services";
+  <!-- ================= HEADER ================= -->
 
-const WHATSAPP_LINK =
-"https://wa.me/message/27688585355";
+  <header>
+    <nav class="nav">
 
-const WHATSAPP_NUMBER =
-"068 858 5355";
+      <a href="#home" class="logo">
+        <span class="logo-icon">
+          <i class="fas fa-bolt"></i>
+        </span>
 
-const WHATSAPP_DIRECT =
-"https://wa.me/27688585355";
+        Lee Electrical & Plumbing
+      </a>
 
-const YOCO_LINK =
-"https://pay.yoco.com/lee-mobile-servises-and-constraction";
-</script>
+      <button
+        class="menu-btn"
+        id="menuBtn"
+        aria-label="Open menu"
+      >
+        <i class="fas fa-bars"></i>
+      </button>
 
-<!-- HEADER -->
-<header>
+      <div class="nav-links" id="navLinks">
 
-<div class="nav">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#prices">Prices</a>
+        <a href="#about">About</a>
+        <a href="#booking">Book</a>
+        <a href="#contact">Contact</a>
 
-<a href="#home" class="logo">
-Lee <span>Electrical & Plumbing</span>
-</a>
+        <a
+          href="https://wa.me/27688685355"
+          target="_blank"
+          rel="noopener"
+          class="nav-whatsapp"
+        >
+          <i class="fab fa-whatsapp"></i>
+          WhatsApp
+        </a>
 
-<button class="menu-btn" onclick="toggleMenu()">☰</button>
+      </div>
+    </nav>
+  </header>
 
-<nav id="mainNav">
 
-<a href="#home" onclick="closeMenu()">Home</a>
+  <!-- ================= HERO ================= -->
 
-<a href="#electrical" onclick="closeMenu()">Electrical</a>
+  <main>
 
-<a href="#plumbing" onclick="closeMenu()">Plumbing</a>
+    <section class="hero" id="home">
 
-<a href="#prices" onclick="closeMenu()">Prices</a>
+      <div class="hero-container">
 
-<a href="#booking" onclick="closeMenu()">Get Quote</a>
+        <div>
 
-<a href="#contact" onclick="closeMenu()">Contact</a>
+          <p style="font-weight:800; color:#9ed8ff; margin-bottom:10px;">
+            PROFESSIONAL ELECTRICAL & PLUMBING SERVICES
+          </p>
 
-</nav>
+          <h1>
+            Power. Water.
+            <span>We've Got You Covered.</span>
+          </h1>
 
-</div>
+          <p>
+            Reliable electrical, plumbing and property maintenance
+            services for homes, apartments, offices and businesses.
+          </p>
 
-</header>
+          <div class="hero-buttons">
 
+            <a href="#booking" class="btn btn-white">
+              <i class="fas fa-calendar-check"></i>
+              Request a Quote
+            </a>
 
-<!-- HERO -->
-<section class="hero" id="home">
+            <a
+              href="https://wa.me/27688685355"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-whatsapp"
+            >
+              <i class="fab fa-whatsapp"></i>
+              WhatsApp Us
+            </a>
 
-<div class="hero-inner">
+          </div>
 
-<div class="badge">
-⚡ Electrical • 🔧 Plumbing • 🏠 Property Services
-</div>
+        </div>
 
-<h1>
-Power. Water.
-<span>We've Got You Covered.</span>
-</h1>
 
-<p>
-Electrical and plumbing services for homes, offices, businesses and
-other properties. Request a quotation and tell us what needs attention.
-</p>
+        <div class="hero-card">
 
-<div class="buttons">
+          <h3>What We Handle</h3>
 
-<a href="#booking" class="btn btn-white">
-Request A Quote
-</a>
+          <div class="hero-item">
+            <i class="fas fa-bolt"></i>
+            <span>Electrical Repairs & Installations</span>
+          </div>
 
-<a id="heroWhatsApp"
-href="#"
-class="btn btn-light">
-💬 WhatsApp Us
-</a>
+          <div class="hero-item">
+            <i class="fas fa-faucet"></i>
+            <span>Plumbing & Water Repairs</span>
+          </div>
 
-</div>
+          <div class="hero-item">
+            <i class="fas fa-temperature-high"></i>
+            <span>Geyser Services</span>
+          </div>
 
-</div>
+          <div class="hero-item">
+            <i class="fas fa-lightbulb"></i>
+            <span>Lighting & Electrical Upgrades</span>
+          </div>
 
-</section>
+          <div class="hero-item">
+            <i class="fas fa-wrench"></i>
+            <span>Property Maintenance</span>
+          </div>
 
+        </div>
 
-<!-- ELECTRICAL -->
-<section class="services" id="electrical">
+      </div>
 
-<div class="container">
+    </section>
 
-<div class="heading">
 
-<small>Electrical Services</small>
+    <!-- ================= FEATURE STRIP ================= -->
 
-<h2>Electrical Work & Repairs</h2>
+    <div class="feature-strip">
 
-<p>
-From everyday electrical repairs to installations and maintenance,
-tell us what you need and request a quotation.
-</p>
+      <div class="features">
 
-</div>
+        <div class="feature">
+          <i class="fas fa-shield-halved"></i>
+          <div>
+            <strong>Professional Service</strong>
+            <small>Quality-focused workmanship</small>
+          </div>
+        </div>
 
-<div class="service-grid">
+        <div class="feature">
+          <i class="fas fa-house"></i>
+          <div>
+            <strong>Residential & Business</strong>
+            <small>Homes, offices & properties</small>
+          </div>
+        </div>
 
-<div class="card">
+        <div class="feature">
+          <i class="fas fa-comments"></i>
+          <div>
+            <strong>Easy Booking</strong>
+            <small>Request your quotation online</small>
+          </div>
+        </div>
 
-<div class="icon">💡</div>
+        <div class="feature">
+          <i class="fas fa-location-dot"></i>
+          <div>
+            <strong>Gauteng Service</strong>
+            <small>Mobile service available</small>
+          </div>
+        </div>
 
-<h3>Lighting Installation</h3>
+      </div>
 
-<p>
-Installation or replacement of lights, fittings and related electrical
-connections.
-</p>
+    </div>
 
-<div class="quote">
-Request Quote
-</div>
 
-</div>
+    <!-- ================= SERVICES ================= -->
 
+    <section id="services">
 
-<div class="card">
+      <div class="container">
 
-<div class="icon">🔌</div>
+        <div class="section-title">
+          <span>Our Services</span>
+          <h2>Electrical & Plumbing Solutions</h2>
+          <p>
+            From small repairs to larger property maintenance jobs,
+            contact us for a quotation.
+          </p>
+        </div>
 
-<h3>Plug & Switch Installation</h3>
 
-<p>
-Installation or replacement of plugs, switches and electrical fittings.
-</p>
+        <div class="services-grid">
 
-<div class="quote">
-Request Quote
-</div>
+          <div class="service-card">
 
-</div>
+            <div class="service-icon">
+              <i class="fas fa-bolt"></i>
+            </div>
 
+            <h3>Electrical Repairs</h3>
 
-<div class="card">
+            <p>
+              Fault finding, electrical repairs, switches, plugs,
+              wiring and general electrical maintenance.
+            </p>
 
-<div class="icon">⚡</div>
+          </div>
 
-<h3>Electrical Fault Finding</h3>
 
-<p>
-Investigating electrical faults, tripping and other electrical problems.
-</p>
+          <div class="service-card">
 
-<div class="quote">
-Inspection Required
-</div>
+            <div class="service-icon">
+              <i class="fas fa-plug"></i>
+            </div>
 
-</div>
+            <h3>Electrical Installations</h3>
 
+            <p>
+              Installation of plugs, switches, lights, appliances
+              and electrical equipment.
+            </p>
 
-<div class="card">
+          </div>
 
-<div class="icon">🧰</div>
 
-<h3>DB Board Services</h3>
+          <div class="service-card">
 
-<p>
-DB board inspections, upgrades and related electrical work.
-</p>
+            <div class="service-icon">
+              <i class="fas fa-lightbulb"></i>
+            </div>
 
-<div class="quote">
-Request Quote
-</div>
+            <h3>Lighting</h3>
 
-</div>
+            <p>
+              Indoor and outdoor lighting installation,
+              replacements and upgrades.
+            </p>
 
+          </div>
 
-<div class="card">
 
-<div class="icon">🏠</div>
+          <div class="service-card">
 
-<h3>House Wiring</h3>
+            <div class="service-icon">
+              <i class="fas fa-faucet"></i>
+            </div>
 
-<p>
-Electrical wiring work for new installations, repairs and property
-improvements.
-</p>
+            <h3>Plumbing Repairs</h3>
 
-<div class="quote">
-Request Quote
-</div>
+            <p>
+              Leaking pipes, taps, toilets, sinks and general
+              household plumbing repairs.
+            </p>
 
-</div>
+          </div>
 
 
-<div class="card">
+          <div class="service-card">
 
-<div class="icon">🔧</div>
+            <div class="service-icon">
+              <i class="fas fa-temperature-high"></i>
+            </div>
 
-<h3>Electrical Maintenance</h3>
+            <h3>Geyser Services</h3>
 
-<p>
-General electrical maintenance for residential and business properties.
-</p>
+            <p>
+              Geyser-related repairs, leaks, replacements and
+              plumbing connections.
+            </p>
 
-<div class="quote">
-Request Quote
-</div>
+          </div>
 
-</div>
 
+          <div class="service-card">
 
-<div class="card">
+            <div class="service-icon">
+              <i class="fas fa-water"></i>
+            </div>
 
-<div class="icon">☀️</div>
+            <h3>Blocked Drains</h3>
 
-<h3>Backup Power Enquiries</h3>
+            <p>
+              Assistance with blocked sinks, toilets, drains
+              and water-flow problems.
+            </p>
 
-<p>
-Ask us about electrical preparation and suitable backup-power solutions.
-</p>
+          </div>
 
-<div class="quote">
-Assessment Required
-</div>
 
-</div>
+          <div class="service-card">
 
+            <div class="service-icon">
+              <i class="fas fa-toilet"></i>
+            </div>
 
-<div class="card">
+            <h3>Toilet Repairs</h3>
 
-<div class="icon">🏢</div>
+            <p>
+              Toilet leaks, faulty mechanisms, blocked toilets
+              and plumbing repairs.
+            </p>
 
-<h3>Commercial Electrical</h3>
+          </div>
 
-<p>
-Electrical maintenance and installation enquiries for offices and
-business properties.
-</p>
 
-<div class="quote">
-Request Quote
-</div>
+          <div class="service-card">
 
-</div>
+            <div class="service-icon">
+              <i class="fas fa-wrench"></i>
+            </div>
 
+            <h3>Property Maintenance</h3>
 
-<div class="card">
+            <p>
+              General maintenance assistance for residential
+              and commercial properties.
+            </p>
 
-<div class="icon">📋</div>
+          </div>
 
-<h3>Electrical Inspection</h3>
 
-<p>
-Electrical inspection enquiries and advice regarding compliance
-requirements.
-</p>
+          <div class="service-card">
 
-<div class="quote">
-Inspection Required
-</div>
+            <div class="service-icon">
+              <i class="fas fa-building"></i>
+            </div>
 
-</div>
+            <h3>Commercial Services</h3>
 
-</div>
+            <p>
+              Electrical and plumbing maintenance for offices,
+              businesses and rental properties.
+            </p>
 
-</div>
+          </div>
 
-</section>
+        </div>
 
+      </div>
 
-<!-- PLUMBING -->
-<section class="services" id="plumbing">
+    </section>
 
-<div class="container">
 
-<div class="heading">
+    <!-- ================= PROPERTY TYPES ================= -->
 
-<small>Plumbing Services</small>
+    <section style="background:#f8fafc;">
 
-<h2>Plumbing Repairs & Installation</h2>
+      <div class="container">
 
-<p>
-From leaking taps and blocked drains to geyser and bathroom plumbing
-enquiries.
-</p>
+        <div class="section-title">
+          <span>Who We Serve</span>
+          <h2>Services For Your Property</h2>
+        </div>
 
-</div>
+        <div class="property-grid">
 
-<div class="service-grid">
+          <div class="property-card">
+            <i class="fas fa-house"></i>
+            <h3>Homes</h3>
+          </div>
 
-<div class="card">
+          <div class="property-card">
+            <i class="fas fa-building"></i>
+            <h3>Apartments</h3>
+          </div>
 
-<div class="icon">💧</div>
+          <div class="property-card">
+            <i class="fas fa-briefcase"></i>
+            <h3>Offices</h3>
+          </div>
 
-<h3>Leak Repairs</h3>
+          <div class="property-card">
+            <i class="fas fa-store"></i>
+            <h3>Businesses</h3>
+          </div>
 
-<p>
-Assistance with visible leaks and plumbing repairs.
-</p>
+        </div>
 
-<div class="quote">
-Request Quote
-</div>
+      </div>
 
-</div>
+    </section>
 
 
-<div class="card">
+    <!-- ================= PRICES ================= -->
 
-<div class="icon">🚰</div>
+    <section class="price-section" id="prices">
 
-<h3>Tap Repairs</h3>
+      <div class="container">
 
-<p>
-Tap replacement, repairs and related plumbing work.
-</p>
+        <div class="section-title">
 
-<div class="quote">
-Request Quote
-</div>
+          <span>Price Guide</span>
 
-</div>
+          <h2>Starting Prices</h2>
 
+          <p>
+            Prices are guides only. Final pricing depends on the
+            job, materials, distance and complexity.
+          </p>
 
-<div class="card">
+        </div>
 
-<div class="icon">🚽</div>
 
-<h3>Toilet Repairs</h3>
+        <div class="price-grid">
 
-<p>
-Toilet repairs, replacement and general toilet plumbing enquiries.
-</p>
+          <div class="price-card">
 
-<div class="quote">
-Request Quote
-</div>
+            <h3>Electrical</h3>
 
-</div>
+            <div class="price-row">
+              <span>Basic electrical repair</span>
+              <span class="price">From R350</span>
+            </div>
 
+            <div class="price-row">
+              <span>Plug / switch installation</span>
+              <span class="price">From R250</span>
+            </div>
 
-<div class="card">
+            <div class="price-row">
+              <span>Lighting installation</span>
+              <span class="price">From R300</span>
+            </div>
 
-<div class="icon">🚿</div>
+            <div class="price-row">
+              <span>Electrical fault finding</span>
+              <span class="price">Quote</span>
+            </div>
 
-<h3>Bathroom Plumbing</h3>
+          </div>
 
-<p>
-Plumbing work for showers, baths, basins and bathroom fittings.
-</p>
 
-<div class="quote">
-Request Quote
-</div>
+          <div class="price-card">
 
-</div>
+            <h3>Plumbing</h3>
 
+            <div class="price-row">
+              <span>Basic plumbing repair</span>
+              <span class="price">From R350</span>
+            </div>
 
-<div class="card">
+            <div class="price-row">
+              <span>Tap replacement</span>
+              <span class="price">From R250</span>
+            </div>
 
-<div class="icon">🍽️</div>
+            <div class="price-row">
+              <span>Toilet repair</span>
+              <span class="price">From R300</span>
+            </div>
 
-<h3>Kitchen Plumbing</h3>
+            <div class="price-row">
+              <span>Blocked drain</span>
+              <span class="price">Quote</span>
+            </div>
 
-<p>
-Kitchen sinks, pipes, taps and related plumbing work.
-</p>
+          </div>
 
-<div class="quote">
-Request Quote
-</div>
 
-</div>
+          <div class="price-card">
 
+            <h3>Geyser & Maintenance</h3>
 
-<div class="card">
+            <div class="price-row">
+              <span>Geyser inspection</span>
+              <span class="price">Quote</span>
+            </div>
 
-<div class="icon">🔥</div>
+            <div class="price-row">
+              <span>Geyser plumbing repair</span>
+              <span class="price">Quote</span>
+            </div>
 
-<h3>Geyser Services</h3>
+            <div class="price-row">
+              <span>Property maintenance</span>
+              <span class="price">Quote</span>
+            </div>
 
-<p>
-Geyser repair, replacement and installation enquiries.
-</p>
+            <div class="price-row">
+              <span>Materials</span>
+              <span class="price">Quoted</span>
+            </div>
 
-<div class="quote">
-Assessment Required
-</div>
+          </div>
 
-</div>
+        </div>
 
 
-<div class="card">
+        <p class="price-note">
+          * Prices are starting estimates and may change after inspection.
+          Materials and additional work may be charged separately.
+        </p>
 
-<div class="icon">🔧</div>
+      </div>
 
-<h3>Blocked Drains</h3>
+    </section>
 
-<p>
-Assistance with blocked drains and drainage problems.
-</p>
 
-<div class="quote">
-Request Quote
-</div>
+    <!-- ================= ABOUT ================= -->
 
-</div>
+    <section id="about">
 
+      <div class="container">
 
-<div class="card">
+        <div class="about-grid">
 
-<div class="icon">🪠</div>
+          <div class="about-box">
 
-<h3>Pipe Repairs</h3>
+            <i class="fas fa-screwdriver-wrench"></i>
 
-<p>
-Pipe repair, replacement and plumbing maintenance enquiries.
-</p>
+            <h2>One Team For Your Property</h2>
 
-<div class="quote">
-Request Quote
-</div>
+            <p>
+              Electrical, plumbing and general property maintenance
+              services made simple.
+            </p>
 
-</div>
+          </div>
 
 
-<div class="card">
+          <div class="about-content">
 
-<div class="icon">🏢</div>
+            <span style="
+              color:#0A66C2;
+              font-weight:800;
+              text-transform:uppercase;
+              letter-spacing:1px;
+            ">
+              About Lee Electrical & Plumbing
+            </span>
 
-<h3>Commercial Plumbing</h3>
+            <h2>Reliable Service. Clear Communication.</h2>
 
-<p>
-Plumbing maintenance and repair enquiries for offices and businesses.
-</p>
+            <p>
+              We provide mobile electrical and plumbing services
+              for residential and commercial properties.
+            </p>
 
-<div class="quote">
-Request Quote
-</div>
+            <p>
+              Tell us what needs attention and send your details
+              through WhatsApp. We can discuss the job and arrange
+              a quotation.
+            </p>
 
-</div>
 
-</div>
+            <ul class="check-list">
 
-</div>
+              <li>
+                <i class="fas fa-circle-check"></i>
+                <span>Electrical repairs and installations</span>
+              </li>
 
-</section>
+              <li>
+                <i class="fas fa-circle-check"></i>
+                <span>Plumbing and water-related repairs</span>
+              </li>
 
+              <li>
+                <i class="fas fa-circle-check"></i>
+                <span>Geyser and maintenance services</span>
+              </li>
 
-<!-- WHY -->
-<section class="why">
+              <li>
+                <i class="fas fa-circle-check"></i>
+                <span>Homes, apartments, offices and businesses</span>
+              </li>
 
-<div class="container">
+              <li>
+                <i class="fas fa-circle-check"></i>
+                <span>Quotation before larger jobs</span>
+              </li>
 
-<div class="heading">
+            </ul>
 
-<small>Why Choose Lee</small>
+          </div>
 
-<h2>One Team For Electrical & Plumbing</h2>
+        </div>
 
-<p>
-A convenient way to request electrical and plumbing assistance for
-your property.
-</p>
+      </div>
 
-</div>
+    </section>
 
-<div class="why-grid">
 
-<div class="why-card">
+    <!-- ================= SAFETY ================= -->
 
-<div class="why-icon">⚡</div>
+    <section class="safety">
 
-<h3>Electrical</h3>
+      <div class="container">
 
-<p>
-Electrical installation, repair and maintenance enquiries.
-</p>
+        <div class="safety-box">
 
-</div>
+          <i class="fas fa-triangle-exclamation"></i>
 
+          <div>
 
-<div class="why-card">
+            <h3>Electrical Safety</h3>
 
-<div class="why-icon">💧</div>
+            <p>
+              Electrical work can be dangerous. Do not attempt
+              electrical repairs beyond your experience. Contact
+              a qualified professional when necessary, and always
+              switch off power before dealing with electrical
+              equipment where it is safe to do so.
+            </p>
 
-<h3>Plumbing</h3>
+          </div>
 
-<p>
-Plumbing repairs, installations and maintenance enquiries.
-</p>
+        </div>
 
-</div>
+      </div>
 
+    </section>
 
-<div class="why-card">
 
-<div class="why-icon">📱</div>
+    <!-- ================= BOOKING ================= -->
 
-<h3>Easy Booking</h3>
+    <section class="booking-section" id="booking">
 
-<p>
-Send your job details directly through WhatsApp.
-</p>
+      <div class="container">
 
-</div>
+        <div class="section-title">
 
+          <span>Request Service</span>
 
-<div class="why-card">
+          <h2>Book a Quote</h2>
 
-<div class="why-icon">🏠</div>
+          <p>
+            Complete the form and your request will be prepared
+            for WhatsApp.
+          </p>
 
-<h3>Property Focused</h3>
+        </div>
 
-<p>
-Services for homes, offices and business properties.
-</p>
 
-</div>
+        <div class="booking-grid">
 
-</div>
+          <div class="booking-info">
 
-</div>
+            <h2>Need Help?</h2>
 
-</section>
+            <p>
+              Send us your service requirements and we will
+              discuss the job with you.
+            </p>
 
 
-<!-- PROPERTY TYPES -->
-<section class="properties">
+            <div class="booking-contact">
 
-<div class="container">
+              <div>
+                <i class="fab fa-whatsapp"></i>
 
-<div class="heading">
+                <a
+                  href="https://wa.me/27688685355"
+                  target="_blank"
+                  rel="noopener"
+                >
+                  068 868 5355
+                </a>
+              </div>
 
-<small>Properties</small>
 
-<h2>Electrical & Plumbing For Your Property</h2>
+              <div>
+                <i class="fas fa-envelope"></i>
 
-<p>
-Tell us what type of property needs assistance.
-</p>
+                <span>
+                  leemobilebusiness@gmail.com
+                </span>
+              </div>
 
-</div>
 
-<div class="property-grid">
+              <div>
+                <i class="fas fa-location-dot"></i>
 
-<div class="property">
-<div>🏠</div>
-House
-</div>
+                <span>
+                  Gauteng, South Africa
+                </span>
+              </div>
 
-<div class="property">
-<div>🏢</div>
-Office
-</div>
+            </div>
 
-<div class="property">
-<div>🏪</div>
-Business
-</div>
+          </div>
 
-<div class="property">
-<div>🏘️</div>
-Apartment / Complex
-</div>
 
-</div>
+          <form class="booking-form" id="bookingForm">
 
-</div>
+            <div class="form-grid">
 
-</section>
+              <div class="form-group">
 
+                <label for="name">
+                  Full Name
+                </label>
 
-<!-- PRICES -->
-<section class="prices" id="prices">
+                <input
+                  type="text"
+                  id="name"
+                  required
+                  placeholder="Your name"
+                >
 
-<div class="container">
+              </div>
 
-<div class="heading">
 
-<small>Price Guide</small>
+              <div class="form-group">
 
-<h2>Request A Quote</h2>
+                <label for="phone">
+                  Phone Number
+                </label>
 
-<p>
-Electrical and plumbing prices depend on the job, materials, property
-and work required. Contact us for an accurate quotation.
-</p>
+                <input
+                  type="tel"
+                  id="phone"
+                  required
+                  placeholder="Your phone number"
+                >
 
-</div>
+              </div>
 
-<div class="price-list">
 
-<div class="price-row">
-<span>Electrical Fault Finding</span>
-<span>Quote Required</span>
-</div>
+              <div class="form-group">
 
-<div class="price-row">
-<span>Lighting Installation</span>
-<span>Quote Required</span>
-</div>
+                <label for="email">
+                  Email
+                </label>
 
-<div class="price-row">
-<span>Plug / Switch Installation</span>
-<span>Quote Required</span>
-</div>
+                <input
+                  type="email"
+                  id="email"
+                  placeholder="Your email"
+                >
 
-<div class="price-row">
-<span>Plumbing Leak Repair</span>
-<span>Quote Required</span>
-</div>
+              </div>
 
-<div class="price-row">
-<span>Blocked Drain</span>
-<span>Quote Required</span>
-</div>
 
-<div class="price-row">
-<span>Geyser Services</span>
-<span>Quote Required</span>
-</div>
+              <div class="form-group">
 
-<div class="price-row">
-<span>Bathroom Plumbing</span>
-<span>Quote Required</span>
-</div>
+                <label for="service">
+                  Service
+                </label>
 
-<div class="price-row">
-<span>Commercial Work</span>
-<span>Site Assessment</span>
-</div>
+                <select id="service" required>
 
-</div>
+                  <option value="">
+                    Select a service
+                  </option>
 
-</div>
+                  <option>
+                    Electrical Repair
+                  </option>
 
-</section>
+                  <option>
+                    Electrical Installation
+                  </option>
 
+                  <option>
+                    Lighting
+                  </option>
 
-<!-- ABOUT -->
-<section class="about">
+                  <option>
+                    Plumbing Repair
+                  </option>
 
-<div class="container">
+                  <option>
+                    Geyser Service
+                  </option>
 
-<div class="about-grid">
+                  <option>
+                    Blocked Drain
+                  </option>
 
-<div>
+                  <option>
+                    Toilet Repair
+                  </option>
 
-<small style="color:#0A66C2;font-weight:900;">
-ABOUT LEE ELECTRICAL & PLUMBING
-</small>
+                  <option>
+                    Property Maintenance
+                  </option>
 
-<h2>
-Reliable solutions for the systems your property depends on.
-</h2>
+                  <option>
+                    Commercial Service
+                  </option>
 
-<p>
-Lee Electrical & Plumbing Services provides electrical and plumbing
-service enquiries for residential and commercial properties.
-</p>
+                  <option>
+                    Other
+                  </option>
 
-<p>
-Whether you have an electrical fault, leaking pipe, blocked drain,
-lighting requirement or another property maintenance issue, contact
-us with the details of the job.
-</p>
+                </select>
 
-<a href="#booking" class="btn btn-blue">
-Request A Quote
-</a>
+              </div>
 
-</div>
 
+              <div class="form-group">
 
-<div class="about-box">
+                <label for="property">
+                  Property Type
+                </label>
 
-<h3>How It Works</h3>
+                <select id="property">
 
-<ul>
+                  <option>House</option>
+                  <option>Apartment</option>
+                  <option>Office</option>
+                  <option>Business</option>
+                  <option>Other</option>
 
-<li>✓ Tell us what needs to be done</li>
+                </select>
 
-<li>✓ Provide your property details</li>
+              </div>
 
-<li>✓ Send photos if useful</li>
 
-<li>✓ Discuss the required work</li>
+              <div class="form-group">
 
-<li>✓ Receive a quotation</li>
+                <label for="date">
+                  Preferred Date
+                </label>
 
-<li>✓ Confirm your service</li>
+                <input
+                  type="date"
+                  id="date"
+                >
 
-</ul>
+              </div>
 
-</div>
 
-</div>
+              <div class="form-group">
 
-</div>
+                <label for="time">
+                  Preferred Time
+                </label>
 
-</section>
+                <input
+                  type="time"
+                  id="time"
+                >
 
+              </div>
 
-<!-- IMPORTANT SAFETY -->
-<section class="safety">
 
-<div class="container">
+              <div class="form-group full">
 
-<div class="heading">
+                <label for="address">
+                  Service Address
+                </label>
 
-<small>Important</small>
+                <input
+                  type="text"
+                  id="address"
+                  required
+                  placeholder="Where should we come?"
+                >
 
-<h2>Electrical & Plumbing Safety</h2>
+              </div>
 
-<p>
-Some electrical and plumbing work requires appropriate qualifications,
-registration, inspection or compliance documentation.
-</p>
 
-</div>
+              <div class="form-group full">
 
-<div class="safety-box">
+                <label for="details">
+                  Job Details
+                </label>
 
-<h3>Electrical work</h3>
+                <textarea
+                  id="details"
+                  placeholder="Describe the problem or work you need..."
+                ></textarea>
 
-<p>
-Do not attempt dangerous electrical repairs yourself. Switch off power
-where appropriate and seek professional assistance for electrical faults.
-</p>
+              </div>
 
-<br>
+            </div>
 
-<h3>Plumbing work</h3>
 
-<p>
-If you have a serious leak or burst pipe, isolate the water supply where
-possible and request assistance to reduce potential property damage.
-</p>
+            <button
+              type="submit"
+              class="submit-btn"
+            >
+              <i class="fab fa-whatsapp"></i>
+              Send Request via WhatsApp
+            </button>
 
-<br>
+          </form>
 
-<h3>Compliance</h3>
+        </div>
 
-<p>
-Where a Certificate of Compliance or other regulated sign-off is required,
-this should be handled by an appropriately authorised professional.
-</p>
+      </div>
 
-</div>
+    </section>
 
-</div>
 
-</section>
+    <!-- ================= PAYMENT ================= -->
 
+    <section class="payment-section">
 
-<!-- BOOKING -->
-<section class="booking" id="booking">
+      <div class="container">
 
-<div class="container">
+        <div class="payment-box">
 
-<div class="heading">
+          <i class="fas fa-credit-card"></i>
 
-<small>Get A Quote</small>
+          <h2>Secure Payment</h2>
 
-<h2>Request Electrical or Plumbing Service</h2>
+          <p>
+            If a Yoco payment is required for your service,
+            use the payment link provided after your quotation
+            has been confirmed.
+          </p>
 
-<p>
-Complete the form and send your request directly to WhatsApp.
-</p>
+          <a
+            href="https://pay.yoco.com/lee-mobile-servises-and-constraction"
+            target="_blank"
+            rel="noopener"
+            class="btn btn-blue"
+          >
+            <i class="fas fa-credit-card"></i>
+            Pay with Yoco
+          </a>
 
-</div>
+          <p style="margin-top:15px;font-size:12px;">
+            Please confirm the payment amount with us before paying.
+          </p>
 
+        </div>
 
-<div class="booking-box">
+      </div>
 
-<form id="serviceForm">
+    </section>
 
-<div class="form-grid">
 
-<div class="field">
+    <!-- ================= CTA ================= -->
 
-<label>Your Name</label>
+    <section class="cta">
 
-<input
-type="text"
-id="customerName"
-placeholder="Enter your name"
-required
->
+      <div class="container">
 
-</div>
+        <h2>Need an Electrician or Plumber?</h2>
 
+        <p>
+          Contact Lee Electrical & Plumbing Services today
+          for assistance and a quotation.
+        </p>
 
-<div class="field">
+        <a
+          href="https://wa.me/27688685355"
+          target="_blank"
+          rel="noopener"
+          class="btn btn-whatsapp"
+        >
+          <i class="fab fa-whatsapp"></i>
+          WhatsApp 068 868 5355
+        </a>
 
-<label>Phone Number</label>
+      </div>
 
-<input
-type="tel"
-id="customerPhone"
-placeholder="e.g. 068 123 4567"
-required
->
+    </section>
 
-</div>
 
+    <!-- ================= CONTACT ================= -->
 
-<div class="field">
+    <section id="contact">
 
-<label>Property Type</label>
+      <div class="container">
 
-<select id="propertyType" required>
+        <div class="section-title">
 
-<option value="">
-Select property
-</option>
+          <span>Contact Us</span>
 
-<option>House</option>
+          <h2>Let's Get Your Job Sorted</h2>
 
-<option>Apartment</option>
+          <p>
+            Contact us for electrical, plumbing and property
+            maintenance services.
+          </p>
 
-<option>Office</option>
+        </div>
 
-<option>Business</option>
 
-<option>Complex</option>
+        <div class="contact-grid">
 
-<option>Warehouse</option>
+          <div class="contact-card">
 
-<option>Other</option>
+            <i class="fab fa-whatsapp"></i>
 
-</select>
+            <h3>WhatsApp</h3>
 
-</div>
+            <p>
+              <a
+                href="https://wa.me/27688685355"
+                target="_blank"
+                rel="noopener"
+              >
+                068 868 5355
+              </a>
+            </p>
 
+          </div>
 
-<div class="field">
 
-<label>Service Type</label>
+          <div class="contact-card">
 
-<select id="serviceType" required>
+            <i class="fas fa-phone"></i>
 
-<option value="">
-Select service
-</option>
+            <h3>Call</h3>
 
-<option>Electrical</option>
+            <p>
+              <a href="tel:+27688685355">
+                068 868 5355
+              </a>
+            </p>
 
-<option>Plumbing</option>
+          </div>
 
-<option>Both Electrical & Plumbing</option>
 
-</select>
+          <div class="contact-card">
 
-</div>
+            <i class="fas fa-envelope"></i>
 
+            <h3>Email</h3>
 
-<div class="field">
+            <p>
+              <a href="mailto:leemobilebusiness@gmail.com">
+                leemobilebusiness@gmail.com
+              </a>
+            </p>
 
-<label>Specific Problem / Service</label>
+          </div>
 
-<input
-type="text"
-id="problem"
-placeholder="Example: leaking geyser / lights not working"
-required
->
+        </div>
 
-</div>
+      </div>
 
+    </section>
 
-<div class="field">
+  </main>
 
-<label>Preferred Date</label>
 
-<input
-type="date"
-id="date"
->
+  <!-- ================= FOOTER ================= -->
 
-</div>
+  <footer>
 
+    <div class="footer-grid">
 
-<div class="field">
+      <div>
 
-<label>Preferred Time</label>
+        <h3>Lee Electrical & Plumbing Services</h3>
 
-<input
-type="time"
-id="time"
->
+        <p>
+          Professional electrical, plumbing and property
+          maintenance services.
+        </p>
 
-</div>
+        <p style="margin-top:12px;">
+          Gauteng, South Africa
+        </p>
 
+      </div>
 
-<div class="field full">
 
-<label>Property Address / Area</label>
+      <div>
 
-<input
-type="text"
-id="address"
-placeholder="Enter your address or area"
-required
->
+        <h3>Quick Links</h3>
 
-</div>
+        <ul class="footer-links">
 
+          <li>
+            <a href="#home">Home</a>
+          </li>
 
-<div class="field full">
+          <li>
+            <a href="#services">Services</a>
+          </li>
 
-<label>Job Details</label>
+          <li>
+            <a href="#prices">Prices</a>
+          </li>
 
-<textarea
-id="notes"
-placeholder="Describe the problem. You can also mention useful details such as number of rooms, affected area or urgency."
-></textarea>
+          <li>
+            <a href="#booking">Book a Quote</a>
+          </li>
 
-</div>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
 
-</div>
+        </ul>
 
+      </div>
 
-<button
-type="submit"
-class="btn submit">
-📱 Request Quote On WhatsApp
-</button>
 
-</form>
+      <div>
 
-</div>
+        <h3>Contact</h3>
 
-</div>
+        <ul class="footer-links">
 
-</section>
+          <li>
+            <a
+              href="https://wa.me/27688685355"
+              target="_blank"
+              rel="noopener"
+            >
+              <i class="fab fa-whatsapp"></i>
+              068 868 5355
+            </a>
+          </li>
 
+          <li>
+            <a href="mailto:leemobilebusiness@gmail.com">
+              <i class="fas fa-envelope"></i>
+              Email Us
+            </a>
+          </li>
 
-<!-- PAYMENT -->
-<section class="payment">
+        </ul>
 
-<div class="container">
+      </div>
 
-<div class="payment-box">
+    </div>
 
-<h2>Pay With Yoco</h2>
 
-<p>
-After your quotation has been confirmed, you can use our Yoco payment
-page for payment.
-</p>
+    <div class="footer-bottom">
 
-<a
-id="yocoButton"
-href="#"
-target="_blank"
-rel="noopener"
-class="btn btn-blue">
-💳 Pay With Yoco
-</a>
+      © <span id="year"></span>
+      Lee Electrical & Plumbing Services.
+      All rights reserved.
 
-</div>
+    </div>
 
-</div>
+  </footer>
 
-</section>
 
+  <!-- ================= FLOATING WHATSAPP ================= -->
 
-<!-- CONTACT -->
-<section class="contact" id="contact">
+  <a
+    href="https://wa.me/27688685355"
+    target="_blank"
+    rel="noopener"
+    class="floating-whatsapp"
+    aria-label="Chat with us on WhatsApp"
+  >
+    <i class="fab fa-whatsapp"></i>
+  </a>
 
-<div class="container">
 
-<div class="heading">
+  <!-- ================= JAVASCRIPT ================= -->
 
-<small style="color:#69b7ff;">
-CONTACT LEE
-</small>
+  <script>
 
-<h2>
-Need Electrical or Plumbing Assistance?
-</h2>
+    /* Business details */
 
-<p>
-Send us your job details and request a quotation.
-</p>
+    const BUSINESS_NAME =
+      "Lee Electrical & Plumbing Services";
 
-</div>
+    const WHATSAPP_NUMBER =
+      "068 868 5355";
 
+    const WHATSAPP_DIRECT =
+      "https://wa.me/27688685355";
 
-<div class="contact-grid">
 
+    /* Mobile menu */
 
-<div class="contact-card">
+    const menuBtn =
+      document.getElementById("menuBtn");
 
-<strong>📱 Phone</strong>
+    const navLinks =
+      document.getElementById("navLinks");
 
-<a id="phoneLink" href="#">
-068 858 5355
-</a>
+    menuBtn.addEventListener("click", function () {
 
-</div>
+      navLinks.classList.toggle("active");
 
+    });
 
-<div class="contact-card">
 
-<strong>💬 WhatsApp</strong>
+    /* Close mobile menu after clicking */
 
-<a
-id="contactWhatsApp"
-href="#"
-target="_blank">
-Chat With Lee Electrical & Plumbing
-</a>
+    document.querySelectorAll(
+      ".nav-links a"
+    ).forEach(function(link) {
 
-</div>
+      link.addEventListener("click", function() {
 
+        navLinks.classList.remove("active");
 
-<div class="contact-card">
+      });
 
-<strong>💳 Payment</strong>
+    });
 
-<a
-id="contactYoco"
-href="#"
-target="_blank">
-Pay With Yoco
-</a>
 
-</div>
+    /* Booking form */
 
+    const bookingForm =
+      document.getElementById("bookingForm");
 
-</div>
+    bookingForm.addEventListener(
+      "submit",
+      function(event) {
 
-</div>
+        event.preventDefault();
 
-</section>
+        const name =
+          document.getElementById("name").value.trim();
 
+        const phone =
+          document.getElementById("phone").value.trim();
 
-<!-- FOOTER -->
-<footer>
+        const email =
+          document.getElementById("email").value.trim();
 
-<strong>
-Lee Electrical & Plumbing Services
-</strong>
+        const service =
+          document.getElementById("service").value;
 
-<br>
+        const property =
+          document.getElementById("property").value;
 
-Electrical • Plumbing • Property Services
+        const date =
+          document.getElementById("date").value;
 
-<br><br>
+        const time =
+          document.getElementById("time").value;
 
-📱 068 858 5355
+        const address =
+          document.getElementById("address").value.trim();
 
-<br><br>
+        const details =
+          document.getElementById("details").value.trim();
 
-© <span id="year"></span>
-Lee Electrical & Plumbing Services.
-All rights reserved.
 
-</footer>
+        let message =
+          "Hello " + BUSINESS_NAME + ",%0A%0A";
 
+        message +=
+          "*NEW SERVICE REQUEST*%0A%0A";
 
-<!-- FLOATING WHATSAPP -->
-<a
-id="floatingWhatsApp"
-class="whatsapp"
-href="#"
-target="_blank"
-aria-label="WhatsApp">
-💬
-</a>
+        message +=
+          "*Name:* " +
+          name +
+          "%0A";
 
+        message +=
+          "*Phone:* " +
+          phone +
+          "%0A";
 
-<script>
+        if (email) {
 
-/* MOBILE MENU */
+          message +=
+            "*Email:* " +
+            email +
+            "%0A";
 
-function toggleMenu(){
+        }
 
-document
-.getElementById("mainNav")
-.classList
-.toggle("show");
+        message +=
+          "*Service:* " +
+          service +
+          "%0A";
 
-}
+        message +=
+          "*Property:* " +
+          property +
+          "%0A";
 
+        if (date) {
 
-function closeMenu(){
+          message +=
+            "*Preferred Date:* " +
+            date +
+            "%0A";
 
-document
-.getElementById("mainNav")
-.classList
-.remove("show");
+        }
 
-}
+        if (time) {
 
+          message +=
+            "*Preferred Time:* " +
+            time +
+            "%0A";
 
-/* LINKS */
+        }
 
-document.getElementById("heroWhatsApp").href =
-WHATSAPP_DIRECT;
+        message +=
+          "*Address:* " +
+          address +
+          "%0A";
 
-document.getElementById("floatingWhatsApp").href =
-WHATSAPP_DIRECT;
+        if (details) {
 
-document.getElementById("contactWhatsApp").href =
-WHATSAPP_LINK;
+          message +=
+            "*Job Details:* " +
+            details +
+            "%0A";
 
-document.getElementById("yocoButton").href =
-YOCO_LINK;
+        }
 
-document.getElementById("contactYoco").href =
-YOCO_LINK;
+        message +=
+          "%0APlease contact me regarding this request.";
 
-document.getElementById("phoneLink").href =
-"tel:+27688585355";
 
-document.getElementById("year").textContent =
-new Date().getFullYear();
+        const whatsappURL =
+          WHATSAPP_DIRECT +
+          "?text=" +
+          message;
 
 
-/* BOOKING FORM */
+        window.open(
+          whatsappURL,
+          "_blank"
+        );
 
-document
-.getElementById("serviceForm")
-.addEventListener("submit", function(event){
+      }
+    );
 
-event.preventDefault();
 
+    /* Current year */
 
-const name =
-document.getElementById("customerName")
-.value
-.trim();
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
 
-
-const phone =
-document.getElementById("customerPhone")
-.value
-.trim();
-
-
-const property =
-document.getElementById("propertyType")
-.value;
-
-
-const service =
-document.getElementById("serviceType")
-.value;
-
-
-const problem =
-document.getElementById("problem")
-.value
-.trim();
-
-
-const date =
-document.getElementById("date")
-.value ||
-"Not specified";
-
-
-const time =
-document.getElementById("time")
-.value ||
-"Not specified";
-
-
-const address =
-document.getElementById("address")
-.value
-.trim();
-
-
-const notes =
-document.getElementById("notes")
-.value
-.trim() ||
-"No additional details provided.";
-
-
-const message =
-
-`⚡ LEE ELECTRICAL & PLUMBING SERVICES
-NEW QUOTE REQUEST
-
-👤 Customer:
-${name}
-
-📱 Phone:
-${phone}
-
-🏠 Property:
-${property}
-
-🔧 Service:
-${service}
-
-🛠️ Problem / Service Required:
-${problem}
-
-📅 Preferred Date:
-${date}
-
-⏰ Preferred Time:
-${time}
-
-📍 Address / Area:
-${address}
-
-📝 Job Details:
-${notes}
-
-Please provide me with a quotation.
-
-Thank you.`;
-
-
-const url =
-WHATSAPP_DIRECT +
-"?text=" +
-encodeURIComponent(message);
-
-
-window.open(url,"_blank");
-
-});
-
-</script>
+  </script>
 
 </body>
 </html>
