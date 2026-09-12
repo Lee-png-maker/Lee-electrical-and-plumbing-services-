@@ -1,1 +1,1907 @@
 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Lee Electrical & Plumbing Services | Gauteng</title>
+
+<meta name="description" content="Lee Electrical & Plumbing Services. Electrical repairs, installations, plumbing, geysers, leaks, blocked drains, lighting and property maintenance. Request a quotation on WhatsApp.">
+
+<meta name="theme-color" content="#0A66C2">
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Arial,Helvetica,sans-serif;
+  background:#f5f8fc;
+  color:#17202a;
+  line-height:1.6;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:1000;
+  background:#fff;
+  box-shadow:0 2px 15px rgba(0,0,0,.08);
+}
+
+.nav{
+  max-width:1150px;
+  margin:auto;
+  min-height:72px;
+  padding:12px 20px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+}
+
+.logo{
+  font-size:21px;
+  font-weight:900;
+  color:#0A66C2;
+}
+
+.logo span{
+  color:#17202a;
+}
+
+nav{
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
+
+nav a{
+  font-size:14px;
+  font-weight:800;
+}
+
+nav a:hover{
+  color:#0A66C2;
+}
+
+.menu-btn{
+  display:none;
+  border:0;
+  background:#0A66C2;
+  color:#fff;
+  padding:9px 13px;
+  border-radius:8px;
+  font-size:22px;
+}
+
+/* HERO */
+
+.hero{
+  min-height:620px;
+  display:flex;
+  align-items:center;
+  padding:70px 20px;
+  color:#fff;
+  background:
+    linear-gradient(rgba(4,35,65,.88),rgba(4,35,65,.88)),
+    linear-gradient(135deg,#0A66C2,#032f5f);
+}
+
+.hero-inner{
+  max-width:1150px;
+  width:100%;
+  margin:auto;
+}
+
+.badge{
+  display:inline-block;
+  padding:8px 15px;
+  border-radius:30px;
+  background:rgba(255,255,255,.12);
+  border:1px solid rgba(255,255,255,.22);
+  font-size:14px;
+  font-weight:800;
+  margin-bottom:20px;
+}
+
+.hero h1{
+  max-width:850px;
+  font-size:clamp(42px,7vw,76px);
+  line-height:1.02;
+  margin-bottom:22px;
+}
+
+.hero h1 span{
+  color:#69b7ff;
+}
+
+.hero p{
+  max-width:700px;
+  color:#dbeeff;
+  font-size:19px;
+  margin-bottom:30px;
+}
+
+.buttons{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.btn{
+  display:inline-block;
+  border:0;
+  padding:14px 22px;
+  border-radius:9px;
+  font-weight:800;
+  cursor:pointer;
+  transition:.2s;
+}
+
+.btn:hover{
+  transform:translateY(-2px);
+}
+
+.btn-blue{
+  background:#0A66C2;
+  color:#fff;
+}
+
+.btn-white{
+  background:#fff;
+  color:#0A66C2;
+}
+
+.btn-light{
+  background:#e5f2ff;
+  color:#07579f;
+}
+
+/* GENERAL */
+
+section{
+  padding:75px 20px;
+}
+
+.container{
+  max-width:1150px;
+  margin:auto;
+}
+
+.heading{
+  max-width:720px;
+  margin:0 auto 45px;
+  text-align:center;
+}
+
+.heading small{
+  color:#0A66C2;
+  font-weight:900;
+  text-transform:uppercase;
+  letter-spacing:1px;
+}
+
+.heading h2{
+  font-size:clamp(30px,5vw,45px);
+  margin:8px 0 12px;
+}
+
+.heading p{
+  color:#687580;
+}
+
+/* SERVICES */
+
+.services{
+  background:#fff;
+}
+
+.service-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.card{
+  background:#f7faff;
+  border:1px solid #dbe8f4;
+  border-radius:16px;
+  padding:27px;
+  transition:.2s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  box-shadow:0 12px 30px rgba(0,0,0,.08);
+}
+
+.icon{
+  width:58px;
+  height:58px;
+  display:grid;
+  place-items:center;
+  border-radius:14px;
+  background:#e5f2ff;
+  font-size:29px;
+  margin-bottom:16px;
+}
+
+.card h3{
+  color:#075aa8;
+  margin-bottom:8px;
+}
+
+.card p{
+  color:#687580;
+  font-size:14px;
+  margin-bottom:15px;
+}
+
+.quote{
+  color:#0A66C2;
+  font-weight:900;
+}
+
+/* WHY */
+
+.why{
+  background:#edf5fc;
+}
+
+.why-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:18px;
+}
+
+.why-card{
+  background:#fff;
+  padding:25px;
+  border-radius:15px;
+  text-align:center;
+}
+
+.why-icon{
+  font-size:34px;
+  margin-bottom:8px;
+}
+
+.why-card h3{
+  color:#075aa8;
+  margin-bottom:6px;
+}
+
+.why-card p{
+  color:#687580;
+  font-size:14px;
+}
+
+/* PROPERTY */
+
+.properties{
+  background:#fff;
+}
+
+.property-grid{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:15px;
+}
+
+.property{
+  padding:24px 15px;
+  text-align:center;
+  background:#f7faff;
+  border:1px solid #dbe8f4;
+  border-radius:14px;
+  font-weight:800;
+}
+
+.property div{
+  font-size:34px;
+  margin-bottom:7px;
+}
+
+/* PRICES */
+
+.prices{
+  background:#f5f8fc;
+}
+
+.price-list{
+  max-width:850px;
+  margin:auto;
+  display:grid;
+  gap:10px;
+}
+
+.price-row{
+  display:flex;
+  justify-content:space-between;
+  gap:15px;
+  background:#fff;
+  padding:17px 20px;
+  border:1px solid #dbe8f4;
+  border-radius:10px;
+}
+
+.price-row span:last-child{
+  color:#0A66C2;
+  font-weight:900;
+  white-space:nowrap;
+}
+
+/* ABOUT */
+
+.about{
+  background:#fff;
+}
+
+.about-grid{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:40px;
+  align-items:center;
+}
+
+.about h2{
+  font-size:42px;
+  line-height:1.15;
+  margin:8px 0 18px;
+}
+
+.about p{
+  color:#687580;
+  margin-bottom:15px;
+}
+
+.about-box{
+  background:#063d73;
+  color:#fff;
+  padding:35px;
+  border-radius:20px;
+}
+
+.about-box h3{
+  font-size:27px;
+  margin-bottom:15px;
+}
+
+.about-box ul{
+  list-style:none;
+}
+
+.about-box li{
+  padding:10px 0;
+  border-bottom:1px solid rgba(255,255,255,.16);
+}
+
+/* SAFETY */
+
+.safety{
+  background:#edf5fc;
+}
+
+.safety-box{
+  max-width:850px;
+  margin:auto;
+  background:#fff;
+  padding:30px;
+  border-radius:18px;
+  border:1px solid #dbe8f4;
+}
+
+.safety-box h3{
+  color:#075aa8;
+  margin-bottom:10px;
+}
+
+.safety-box p{
+  color:#687580;
+}
+
+.safety-box ul{
+  padding-left:20px;
+  margin-top:12px;
+  color:#687580;
+}
+
+/* BOOKING */
+
+.booking{
+  background:#fff;
+}
+
+.booking-box{
+  max-width:900px;
+  margin:auto;
+  background:#f5f8fc;
+  border:1px solid #dbe8f4;
+  padding:30px;
+  border-radius:20px;
+}
+
+.form-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:15px;
+}
+
+.field{
+  display:flex;
+  flex-direction:column;
+  gap:6px;
+}
+
+.full{
+  grid-column:1/-1;
+}
+
+label{
+  font-size:13px;
+  font-weight:800;
+}
+
+input,
+select,
+textarea{
+  width:100%;
+  padding:13px;
+  border:1px solid #cbd9e6;
+  border-radius:8px;
+  background:#fff;
+  font:inherit;
+  outline:none;
+}
+
+input:focus,
+select:focus,
+textarea:focus{
+  border-color:#0A66C2;
+}
+
+textarea{
+  min-height:120px;
+  resize:vertical;
+}
+
+.submit{
+  width:100%;
+  margin-top:18px;
+  background:#0A66C2;
+  color:#fff;
+  font-size:16px;
+}
+
+/* PAYMENT */
+
+.payment{
+  background:#dfefff;
+  text-align:center;
+}
+
+.payment-box{
+  max-width:750px;
+  margin:auto;
+}
+
+.payment h2{
+  font-size:35px;
+  margin-bottom:12px;
+}
+
+.payment p{
+  color:#61707d;
+  margin-bottom:22px;
+}
+
+/* CONTACT */
+
+.contact{
+  background:#062b4e;
+  color:#fff;
+}
+
+.contact .heading h2{
+  color:#fff;
+}
+
+.contact .heading p{
+  color:#c8dced;
+}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.contact-card{
+  padding:25px;
+  background:rgba(255,255,255,.06);
+  border:1px solid rgba(255,255,255,.14);
+  border-radius:15px;
+}
+
+.contact-card strong{
+  display:block;
+  color:#69b7ff;
+  margin-bottom:8px;
+}
+
+.contact-card a{
+  word-break:break-word;
+}
+
+/* FOOTER */
+
+footer{
+  background:#031b30;
+  color:#aebdca;
+  text-align:center;
+  padding:25px 20px;
+  font-size:13px;
+}
+
+footer strong{
+  color:#fff;
+}
+
+/* WHATSAPP */
+
+.whatsapp{
+  position:fixed;
+  right:18px;
+  bottom:18px;
+  width:58px;
+  height:58px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:#25D366;
+  color:#fff;
+  font-size:27px;
+  box-shadow:0 8px 25px rgba(0,0,0,.25);
+  z-index:2000;
+}
+
+/* MOBILE */
+
+@media(max-width:850px){
+
+  nav{
+    display:none;
+    position:absolute;
+    top:72px;
+    left:0;
+    width:100%;
+    background:#fff;
+    padding:16px 20px;
+    flex-direction:column;
+    align-items:flex-start;
+    box-shadow:0 10px 20px rgba(0,0,0,.08);
+  }
+
+  nav.show{
+    display:flex;
+  }
+
+  .menu-btn{
+    display:block;
+  }
+
+  .service-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .why-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .property-grid{
+    grid-template-columns:1fr 1fr;
+  }
+
+  .about-grid{
+    grid-template-columns:1fr;
+  }
+
+  .contact-grid{
+    grid-template-columns:1fr;
+  }
+}
+
+@media(max-width:560px){
+
+  section{
+    padding:55px 15px;
+  }
+
+  .hero{
+    min-height:570px;
+  }
+
+  .hero h1{
+    font-size:46px;
+  }
+
+  .hero p{
+    font-size:16px;
+  }
+
+  .service-grid,
+  .why-grid,
+  .property-grid,
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .full{
+    grid-column:auto;
+  }
+
+  .booking-box{
+    padding:20px;
+  }
+
+  .about h2{
+    font-size:34px;
+  }
+
+  .price-row{
+    font-size:14px;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<script>
+const BUSINESS_NAME = "Lee Electrical & Plumbing Services";
+
+const WHATSAPP_LINK =
+"https://wa.me/message/27688585355";
+
+const WHATSAPP_NUMBER =
+"068 858 5355";
+
+const WHATSAPP_DIRECT =
+"https://wa.me/27688585355";
+
+const YOCO_LINK =
+"https://pay.yoco.com/lee-mobile-servises-and-constraction";
+</script>
+
+<!-- HEADER -->
+<header>
+
+<div class="nav">
+
+<a href="#home" class="logo">
+Lee <span>Electrical & Plumbing</span>
+</a>
+
+<button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+<nav id="mainNav">
+
+<a href="#home" onclick="closeMenu()">Home</a>
+
+<a href="#electrical" onclick="closeMenu()">Electrical</a>
+
+<a href="#plumbing" onclick="closeMenu()">Plumbing</a>
+
+<a href="#prices" onclick="closeMenu()">Prices</a>
+
+<a href="#booking" onclick="closeMenu()">Get Quote</a>
+
+<a href="#contact" onclick="closeMenu()">Contact</a>
+
+</nav>
+
+</div>
+
+</header>
+
+
+<!-- HERO -->
+<section class="hero" id="home">
+
+<div class="hero-inner">
+
+<div class="badge">
+⚡ Electrical • 🔧 Plumbing • 🏠 Property Services
+</div>
+
+<h1>
+Power. Water.
+<span>We've Got You Covered.</span>
+</h1>
+
+<p>
+Electrical and plumbing services for homes, offices, businesses and
+other properties. Request a quotation and tell us what needs attention.
+</p>
+
+<div class="buttons">
+
+<a href="#booking" class="btn btn-white">
+Request A Quote
+</a>
+
+<a id="heroWhatsApp"
+href="#"
+class="btn btn-light">
+💬 WhatsApp Us
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ELECTRICAL -->
+<section class="services" id="electrical">
+
+<div class="container">
+
+<div class="heading">
+
+<small>Electrical Services</small>
+
+<h2>Electrical Work & Repairs</h2>
+
+<p>
+From everyday electrical repairs to installations and maintenance,
+tell us what you need and request a quotation.
+</p>
+
+</div>
+
+<div class="service-grid">
+
+<div class="card">
+
+<div class="icon">💡</div>
+
+<h3>Lighting Installation</h3>
+
+<p>
+Installation or replacement of lights, fittings and related electrical
+connections.
+</p>
+
+<div class="quote">
+Request Quote
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🔌</div>
+
+<h3>Plug & Switch Installation</h3>
+
+<p>
+Installation or replacement of plugs, switches and electrical fittings.
+</p>
+
+<div class="quote">
+Request Quote
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">⚡</div>
+
+<h3>Electrical Fault Finding</h3>
+
+<p>
+Investigating electrical faults, tripping and other electrical problems.
+</p>
+
+<div class="quote">
+Inspection Required
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🧰</div>
+
+<h3>DB Board Services</h3>
+
+<p>
+DB board inspections, upgrades and related electrical work.
+</p>
+
+<div class="quote">
+Request Quote
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🏠</div>
+
+<h3>House Wiring</h3>
+
+<p>
+Electrical wiring work for new installations, repairs and property
+improvements.
+</p>
+
+<div class="quote">
+Request Quote
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🔧</div>
+
+<h3>Electrical Maintenance</h3>
+
+<p>
+General electrical maintenance for residential and business properties.
+</p>
+
+<div class="quote">
+Request Quote
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">☀️</div>
+
+<h3>Backup Power Enquiries</h3>
+
+<p>
+Ask us about electrical preparation and suitable backup-power solutions.
+</p>
+
+<div class="quote">
+Assessment Required
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🏢</div>
+
+<h3>Commercial Electrical</h3>
+
+<p>
+Electrical maintenance and installation enquiries for offices and
+business properties.
+</p>
+
+<div class="quote">
+Request Quote
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">📋</div>
+
+<h3>Electrical Inspection</h3>
+
+<p>
+Electrical inspection enquiries and advice regarding compliance
+requirements.
+</p>
+
+<div class="quote">
+Inspection Required
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PLUMBING -->
+<section class="services" id="plumbing">
+
+<div class="container">
+
+<div class="heading">
+
+<small>Plumbing Services</small>
+
+<h2>Plumbing Repairs & Installation</h2>
+
+<p>
+From leaking taps and blocked drains to geyser and bathroom plumbing
+enquiries.
+</p>
+
+</div>
+
+<div class="service-grid">
+
+<div class="card">
+
+<div class="icon">💧</div>
+
+<h3>Leak Repairs</h3>
+
+<p>
+Assistance with visible leaks and plumbing repairs.
+</p>
+
+<div class="quote">
+Request Quote
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🚰</div>
+
+<h3>Tap Repairs</h3>
+
+<p>
+Tap replacement, repairs and related plumbing work.
+</p>
+
+<div class="quote">
+Request Quote
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🚽</div>
+
+<h3>Toilet Repairs</h3>
+
+<p>
+Toilet repairs, replacement and general toilet plumbing enquiries.
+</p>
+
+<div class="quote">
+Request Quote
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🚿</div>
+
+<h3>Bathroom Plumbing</h3>
+
+<p>
+Plumbing work for showers, baths, basins and bathroom fittings.
+</p>
+
+<div class="quote">
+Request Quote
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🍽️</div>
+
+<h3>Kitchen Plumbing</h3>
+
+<p>
+Kitchen sinks, pipes, taps and related plumbing work.
+</p>
+
+<div class="quote">
+Request Quote
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🔥</div>
+
+<h3>Geyser Services</h3>
+
+<p>
+Geyser repair, replacement and installation enquiries.
+</p>
+
+<div class="quote">
+Assessment Required
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🔧</div>
+
+<h3>Blocked Drains</h3>
+
+<p>
+Assistance with blocked drains and drainage problems.
+</p>
+
+<div class="quote">
+Request Quote
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🪠</div>
+
+<h3>Pipe Repairs</h3>
+
+<p>
+Pipe repair, replacement and plumbing maintenance enquiries.
+</p>
+
+<div class="quote">
+Request Quote
+</div>
+
+</div>
+
+
+<div class="card">
+
+<div class="icon">🏢</div>
+
+<h3>Commercial Plumbing</h3>
+
+<p>
+Plumbing maintenance and repair enquiries for offices and businesses.
+</p>
+
+<div class="quote">
+Request Quote
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- WHY -->
+<section class="why">
+
+<div class="container">
+
+<div class="heading">
+
+<small>Why Choose Lee</small>
+
+<h2>One Team For Electrical & Plumbing</h2>
+
+<p>
+A convenient way to request electrical and plumbing assistance for
+your property.
+</p>
+
+</div>
+
+<div class="why-grid">
+
+<div class="why-card">
+
+<div class="why-icon">⚡</div>
+
+<h3>Electrical</h3>
+
+<p>
+Electrical installation, repair and maintenance enquiries.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">💧</div>
+
+<h3>Plumbing</h3>
+
+<p>
+Plumbing repairs, installations and maintenance enquiries.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">📱</div>
+
+<h3>Easy Booking</h3>
+
+<p>
+Send your job details directly through WhatsApp.
+</p>
+
+</div>
+
+
+<div class="why-card">
+
+<div class="why-icon">🏠</div>
+
+<h3>Property Focused</h3>
+
+<p>
+Services for homes, offices and business properties.
+</p>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PROPERTY TYPES -->
+<section class="properties">
+
+<div class="container">
+
+<div class="heading">
+
+<small>Properties</small>
+
+<h2>Electrical & Plumbing For Your Property</h2>
+
+<p>
+Tell us what type of property needs assistance.
+</p>
+
+</div>
+
+<div class="property-grid">
+
+<div class="property">
+<div>🏠</div>
+House
+</div>
+
+<div class="property">
+<div>🏢</div>
+Office
+</div>
+
+<div class="property">
+<div>🏪</div>
+Business
+</div>
+
+<div class="property">
+<div>🏘️</div>
+Apartment / Complex
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PRICES -->
+<section class="prices" id="prices">
+
+<div class="container">
+
+<div class="heading">
+
+<small>Price Guide</small>
+
+<h2>Request A Quote</h2>
+
+<p>
+Electrical and plumbing prices depend on the job, materials, property
+and work required. Contact us for an accurate quotation.
+</p>
+
+</div>
+
+<div class="price-list">
+
+<div class="price-row">
+<span>Electrical Fault Finding</span>
+<span>Quote Required</span>
+</div>
+
+<div class="price-row">
+<span>Lighting Installation</span>
+<span>Quote Required</span>
+</div>
+
+<div class="price-row">
+<span>Plug / Switch Installation</span>
+<span>Quote Required</span>
+</div>
+
+<div class="price-row">
+<span>Plumbing Leak Repair</span>
+<span>Quote Required</span>
+</div>
+
+<div class="price-row">
+<span>Blocked Drain</span>
+<span>Quote Required</span>
+</div>
+
+<div class="price-row">
+<span>Geyser Services</span>
+<span>Quote Required</span>
+</div>
+
+<div class="price-row">
+<span>Bathroom Plumbing</span>
+<span>Quote Required</span>
+</div>
+
+<div class="price-row">
+<span>Commercial Work</span>
+<span>Site Assessment</span>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ABOUT -->
+<section class="about">
+
+<div class="container">
+
+<div class="about-grid">
+
+<div>
+
+<small style="color:#0A66C2;font-weight:900;">
+ABOUT LEE ELECTRICAL & PLUMBING
+</small>
+
+<h2>
+Reliable solutions for the systems your property depends on.
+</h2>
+
+<p>
+Lee Electrical & Plumbing Services provides electrical and plumbing
+service enquiries for residential and commercial properties.
+</p>
+
+<p>
+Whether you have an electrical fault, leaking pipe, blocked drain,
+lighting requirement or another property maintenance issue, contact
+us with the details of the job.
+</p>
+
+<a href="#booking" class="btn btn-blue">
+Request A Quote
+</a>
+
+</div>
+
+
+<div class="about-box">
+
+<h3>How It Works</h3>
+
+<ul>
+
+<li>✓ Tell us what needs to be done</li>
+
+<li>✓ Provide your property details</li>
+
+<li>✓ Send photos if useful</li>
+
+<li>✓ Discuss the required work</li>
+
+<li>✓ Receive a quotation</li>
+
+<li>✓ Confirm your service</li>
+
+</ul>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- IMPORTANT SAFETY -->
+<section class="safety">
+
+<div class="container">
+
+<div class="heading">
+
+<small>Important</small>
+
+<h2>Electrical & Plumbing Safety</h2>
+
+<p>
+Some electrical and plumbing work requires appropriate qualifications,
+registration, inspection or compliance documentation.
+</p>
+
+</div>
+
+<div class="safety-box">
+
+<h3>Electrical work</h3>
+
+<p>
+Do not attempt dangerous electrical repairs yourself. Switch off power
+where appropriate and seek professional assistance for electrical faults.
+</p>
+
+<br>
+
+<h3>Plumbing work</h3>
+
+<p>
+If you have a serious leak or burst pipe, isolate the water supply where
+possible and request assistance to reduce potential property damage.
+</p>
+
+<br>
+
+<h3>Compliance</h3>
+
+<p>
+Where a Certificate of Compliance or other regulated sign-off is required,
+this should be handled by an appropriately authorised professional.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- BOOKING -->
+<section class="booking" id="booking">
+
+<div class="container">
+
+<div class="heading">
+
+<small>Get A Quote</small>
+
+<h2>Request Electrical or Plumbing Service</h2>
+
+<p>
+Complete the form and send your request directly to WhatsApp.
+</p>
+
+</div>
+
+
+<div class="booking-box">
+
+<form id="serviceForm">
+
+<div class="form-grid">
+
+<div class="field">
+
+<label>Your Name</label>
+
+<input
+type="text"
+id="customerName"
+placeholder="Enter your name"
+required
+>
+
+</div>
+
+
+<div class="field">
+
+<label>Phone Number</label>
+
+<input
+type="tel"
+id="customerPhone"
+placeholder="e.g. 068 123 4567"
+required
+>
+
+</div>
+
+
+<div class="field">
+
+<label>Property Type</label>
+
+<select id="propertyType" required>
+
+<option value="">
+Select property
+</option>
+
+<option>House</option>
+
+<option>Apartment</option>
+
+<option>Office</option>
+
+<option>Business</option>
+
+<option>Complex</option>
+
+<option>Warehouse</option>
+
+<option>Other</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>Service Type</label>
+
+<select id="serviceType" required>
+
+<option value="">
+Select service
+</option>
+
+<option>Electrical</option>
+
+<option>Plumbing</option>
+
+<option>Both Electrical & Plumbing</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>Specific Problem / Service</label>
+
+<input
+type="text"
+id="problem"
+placeholder="Example: leaking geyser / lights not working"
+required
+>
+
+</div>
+
+
+<div class="field">
+
+<label>Preferred Date</label>
+
+<input
+type="date"
+id="date"
+>
+
+</div>
+
+
+<div class="field">
+
+<label>Preferred Time</label>
+
+<input
+type="time"
+id="time"
+>
+
+</div>
+
+
+<div class="field full">
+
+<label>Property Address / Area</label>
+
+<input
+type="text"
+id="address"
+placeholder="Enter your address or area"
+required
+>
+
+</div>
+
+
+<div class="field full">
+
+<label>Job Details</label>
+
+<textarea
+id="notes"
+placeholder="Describe the problem. You can also mention useful details such as number of rooms, affected area or urgency."
+></textarea>
+
+</div>
+
+</div>
+
+
+<button
+type="submit"
+class="btn submit">
+📱 Request Quote On WhatsApp
+</button>
+
+</form>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- PAYMENT -->
+<section class="payment">
+
+<div class="container">
+
+<div class="payment-box">
+
+<h2>Pay With Yoco</h2>
+
+<p>
+After your quotation has been confirmed, you can use our Yoco payment
+page for payment.
+</p>
+
+<a
+id="yocoButton"
+href="#"
+target="_blank"
+rel="noopener"
+class="btn btn-blue">
+💳 Pay With Yoco
+</a>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- CONTACT -->
+<section class="contact" id="contact">
+
+<div class="container">
+
+<div class="heading">
+
+<small style="color:#69b7ff;">
+CONTACT LEE
+</small>
+
+<h2>
+Need Electrical or Plumbing Assistance?
+</h2>
+
+<p>
+Send us your job details and request a quotation.
+</p>
+
+</div>
+
+
+<div class="contact-grid">
+
+
+<div class="contact-card">
+
+<strong>📱 Phone</strong>
+
+<a id="phoneLink" href="#">
+068 858 5355
+</a>
+
+</div>
+
+
+<div class="contact-card">
+
+<strong>💬 WhatsApp</strong>
+
+<a
+id="contactWhatsApp"
+href="#"
+target="_blank">
+Chat With Lee Electrical & Plumbing
+</a>
+
+</div>
+
+
+<div class="contact-card">
+
+<strong>💳 Payment</strong>
+
+<a
+id="contactYoco"
+href="#"
+target="_blank">
+Pay With Yoco
+</a>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+
+<strong>
+Lee Electrical & Plumbing Services
+</strong>
+
+<br>
+
+Electrical • Plumbing • Property Services
+
+<br><br>
+
+📱 068 858 5355
+
+<br><br>
+
+© <span id="year"></span>
+Lee Electrical & Plumbing Services.
+All rights reserved.
+
+</footer>
+
+
+<!-- FLOATING WHATSAPP -->
+<a
+id="floatingWhatsApp"
+class="whatsapp"
+href="#"
+target="_blank"
+aria-label="WhatsApp">
+💬
+</a>
+
+
+<script>
+
+/* MOBILE MENU */
+
+function toggleMenu(){
+
+document
+.getElementById("mainNav")
+.classList
+.toggle("show");
+
+}
+
+
+function closeMenu(){
+
+document
+.getElementById("mainNav")
+.classList
+.remove("show");
+
+}
+
+
+/* LINKS */
+
+document.getElementById("heroWhatsApp").href =
+WHATSAPP_DIRECT;
+
+document.getElementById("floatingWhatsApp").href =
+WHATSAPP_DIRECT;
+
+document.getElementById("contactWhatsApp").href =
+WHATSAPP_LINK;
+
+document.getElementById("yocoButton").href =
+YOCO_LINK;
+
+document.getElementById("contactYoco").href =
+YOCO_LINK;
+
+document.getElementById("phoneLink").href =
+"tel:+27688585355";
+
+document.getElementById("year").textContent =
+new Date().getFullYear();
+
+
+/* BOOKING FORM */
+
+document
+.getElementById("serviceForm")
+.addEventListener("submit", function(event){
+
+event.preventDefault();
+
+
+const name =
+document.getElementById("customerName")
+.value
+.trim();
+
+
+const phone =
+document.getElementById("customerPhone")
+.value
+.trim();
+
+
+const property =
+document.getElementById("propertyType")
+.value;
+
+
+const service =
+document.getElementById("serviceType")
+.value;
+
+
+const problem =
+document.getElementById("problem")
+.value
+.trim();
+
+
+const date =
+document.getElementById("date")
+.value ||
+"Not specified";
+
+
+const time =
+document.getElementById("time")
+.value ||
+"Not specified";
+
+
+const address =
+document.getElementById("address")
+.value
+.trim();
+
+
+const notes =
+document.getElementById("notes")
+.value
+.trim() ||
+"No additional details provided.";
+
+
+const message =
+
+`⚡ LEE ELECTRICAL & PLUMBING SERVICES
+NEW QUOTE REQUEST
+
+👤 Customer:
+${name}
+
+📱 Phone:
+${phone}
+
+🏠 Property:
+${property}
+
+🔧 Service:
+${service}
+
+🛠️ Problem / Service Required:
+${problem}
+
+📅 Preferred Date:
+${date}
+
+⏰ Preferred Time:
+${time}
+
+📍 Address / Area:
+${address}
+
+📝 Job Details:
+${notes}
+
+Please provide me with a quotation.
+
+Thank you.`;
+
+
+const url =
+WHATSAPP_DIRECT +
+"?text=" +
+encodeURIComponent(message);
+
+
+window.open(url,"_blank");
+
+});
+
+</script>
+
+</body>
+</html>
